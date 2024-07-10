@@ -1,16 +1,15 @@
 ﻿<root:AppBase
     x:Class="HotPotPlayer.App"
-    xmlns:root="using:HotPotPlayer"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:t="using:HotPotPlayer.Templates"
-    >
+    xmlns:root="using:HotPotPlayer"
+    xmlns:t="using:HotPotPlayer.Templates">
     <root:AppBase.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
                 <XamlControlsResources xmlns="using:Microsoft.UI.Xaml.Controls" />
                 <ResourceDictionary Source="ms-appx:///Assets/Icon/Icons.xaml" />
-                <!--Styles-->
+                <!--  Styles  -->
                 <ResourceDictionary Source="ms-appx:///Styles/Colors.xaml" />
                 <ResourceDictionary Source="ms-appx:///Styles/Buttons.xaml" />
                 <ResourceDictionary Source="ms-appx:///Styles/Images.xaml" />
@@ -19,21 +18,21 @@
                 <ResourceDictionary Source="ms-appx:///Styles/ListViews.xaml" />
                 <ResourceDictionary Source="ms-appx:///Styles/Pivots.xaml" />
                 <ResourceDictionary Source="ms-appx:///Styles/Expanders.xaml" />
-                <!--Templates-->
+                <!--  Templates  -->
                 <ResourceDictionary Source="ms-appx:///Templates/PivotTemplates.xaml" />
                 <t:CardTemplates />
                 <t:ListTemplates />
                 <t:ZoomTemplates />
-                <!-- Other merged dictionaries here -->
+                <!--  Other merged dictionaries here  -->
             </ResourceDictionary.MergedDictionaries>
-            <!-- Other app resources here -->
+            <!--  Other app resources here  -->
             <ResourceDictionary.ThemeDictionaries>
                 <ResourceDictionary x:Key="Default">
                     <FontFamily x:Key="MiSansNormal">ms-appx:///Assets/Font/MiSans-Normal.ttf#MiSans</FontFamily>
                     <FontFamily x:Key="MiSansRegular">ms-appx:///Assets/Font/MiSans-Regular.ttf#MiSans</FontFamily>
                     <FontFamily x:Key="MiSansMedium">ms-appx:///Assets/Font/MiSans-Medium.ttf#MiSans</FontFamily>
                     <FontFamily x:Key="MiSansBold">ms-appx:///Assets/Font/MiSans-Bold.ttf#MiSans</FontFamily>
-                    <FontFamily x:Key="SegoeIcons">ms-appx:///Assets/Font/SegoeIcons.ttf#Segoe Fluent Icons</FontFamily>
+                    <FontFamily x:Key="SegoeIcons">Segoe Fluent Icons,Segoe MDL2 Assets</FontFamily>
                     <FontFamily x:Key="BiliIcons">ms-appx:///Assets/Icon/bili.ttf#bili</FontFamily>
                 </ResourceDictionary>
             </ResourceDictionary.ThemeDictionaries>
